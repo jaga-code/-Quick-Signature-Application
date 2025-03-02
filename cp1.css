@@ -1,0 +1,58 @@
+.canvas {
+    border: 3px solid black;
+    /* Adds a 3-pixel thick solid black border around the canvas */
+}
+
+body {
+    color: rgb(12, 130, 69);
+    /* Sets the text color of the entire body to a dark green shade */
+}
+
+.main {
+    position: absolute;
+    /* Positions the main container absolutely on the page */
+
+    top: 50%;
+    left: 50%;
+    /* Moves the container to the center of the page */
+
+    transform: translate(-50%, -50%);
+    /* Shifts the container back by 50% of its width and height, perfectly centering it */
+}
+
+.top, .bottom {
+    display: flex;
+    /* Uses flexbox layout for both the top and bottom sections */
+
+    flex-direction: row;
+    /* Arranges child elements (blocks/buttons) in a row */
+
+    justify-content: space-between;
+    /* Spaces the child elements evenly across the available width */
+
+    margin: 20px 0 20px 0;
+    /* Adds a 20px margin above and below, with 0px margin on the sides */
+}
+
+.block, input, select, button {
+    width: 80%;
+    /* Ensures that all elements inside .block (input, select, button) take up 80% of their parent container's width */
+}
+
+.top > block {
+    margin: 10px;
+    /* Adds a 10px margin around each block inside the .top section */
+}
+
+.bottom > button {
+    margin: 10px;
+    /* Adds a 10px margin around each button inside the .bottom section */
+}
+
+.block > p {
+    margin: 10px auto;
+    /* Adds a 10px margin above and below the paragraph, while centering it horizontally */
+
+    width: 50%;
+    /* Sets the paragraph width to 50% of its parent container */
+}
